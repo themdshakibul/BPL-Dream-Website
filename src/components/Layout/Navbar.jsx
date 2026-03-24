@@ -76,7 +76,7 @@ const Navbar = () => {
             </div>
           </div>
           {/* navbar bg image */}
-          <div className="bg-[url('/src/assets/bg-shadow.png')] h-150 bg-no-repeat bg-cover rounded-2xl bg-[#131313] text-white ">
+          <div className="bg-[url('/src/assets/bg-shadow.png')] h-150 bg-no-repeat bg-cover rounded-2xl bg-[#131313] text-white">
             <div className="flex flex-col h-140 items-center justify-center text-center space-y-5">
               <img src={bannerImage} alt="Banner Main" />
               <h2 className="text-[40px] font-bold">

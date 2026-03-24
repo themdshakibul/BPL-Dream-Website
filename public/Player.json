@@ -1,0 +1,92 @@
+[
+  {
+    "playerImage": "https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/331100/331137.6.jpg",
+    "playerName": "Virat Kohli",
+    "playerCountry": "India",
+    "playerRole": "Batsman",
+    "rating": 9.9,
+    "price": "$180,000",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium"
+  },
+  {
+    "playerImage": "https://api.bdcrictime.com/shakib-glass-25_01_2026.jpg",
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playerRole": "All-Rounder",
+    "rating": 9.8,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "price": "$150,000"
+  },
+  {
+    "playerImage": "https://rb.gy/hxgiz8",
+    "playerName": "Tamim Iqbal",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Batsman",
+    "rating": 9.2,
+    "price": "$120,000",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "None"
+  },
+  {
+    "playerImage": "https://www.royalchallengers.com/PRRCB01/public/styles/1061x767_landscape/public/2022-03/XVI_2208.jpg?itok=B2T9SyD9",
+    "playerName": "Faf du Plessis",
+    "playerCountry": "South Africa",
+    "playerRole": "Batsman",
+    "rating": 9.0,
+    "price": "$140,000",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm leg break"
+  },
+  {
+    "playerImage": "https://www.ariananews.af/wp-content/uploads/2024/03/Rashid.jpg",
+    "playerName": "Rashid Khan",
+    "playerCountry": "Afghanistan",
+    "playerRole": "Bowler",
+    "rating": 9.7,
+    "price": "$160,000",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm leg break"
+  },
+  {
+    "playerImage": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1460/f_auto/primary/rhhqoy7xolmnaw0xkcbs",
+    "playerName": "Andre Russell",
+    "playerCountry": "West Indies",
+    "playerRole": "All-Rounder",
+    "rating": 9.6,
+    "price": "$170,000",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast"
+  },
+  {
+    "playerImage": "https://static.cricbuzz.com/a/img/v1/i1/c788062/litton-das-takes-dig-at-national-selection-panel-over-omission-of-shamim.jpg?d=low&p=det",
+    "playerName": "Liton Das",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Wicketkeeper-Batsman",
+    "rating": 8.9,
+    "price": "$110,000",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None"
+  },
+  {
+    "playerImage": "https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/383500/383539.6.jpg",
+    "playerName": "Mustafizur Rahman",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Bowler",
+    "rating": 9.1,
+    "price": "$130,000",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm fast-medium"
+  },
+  {
+    "playerImage": "https://thepatriot.in/wp-content/uploads/2023/11/Miller.jpg",
+    "playerName": "David Miller",
+    "playerCountry": "South Africa",
+    "playerRole": "Batsman",
+    "rating": 8.8,
+    "price": "$125,000",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm off break"
+  }
+]

@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Footer from "./components/Layout/Footer";
 import Navbar from "./components/Layout/Navbar";
@@ -11,14 +11,24 @@ const fetchPlayer = async () => {
 
 function App() {
   const PlayerPromis = fetchPlayer();
+
+  const [coin, setCoin] = useState(500000);
   return (
     <>
       <div>
-        <Navbar />
+        <Navbar coin={coin} />
         <Suspense
-          fallback={<span className="loading loading-dots loading-xl"></span>}
+          fallback={
+            <div className="flex items-center justify-center h-150 text-center">
+              <span className="loading loading-dots loading-xl "></span>
+            </div>
+          }
         >
-          <AvlablePlayer PlayerPromis={PlayerPromis} />
+          <AvlablePlayer
+            PlayerPromis={PlayerPromis}
+            setCoin={setCoin}
+            coin={coin}
+          />
         </Suspense>
 
         <Footer />

@@ -2,7 +2,7 @@ import navLogo from "../../assets/logo.png";
 import dolarImage from "../../assets/dollar.png";
 import bannerImage from "../../assets/banner-main.png";
 
-const Navbar = () => {
+const Navbar = ({ coin }) => {
   return (
     <>
       <div>
@@ -69,7 +69,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
               <a className="btn">
-                <span>0000</span>
+                <span>{coin}</span>
                 <span>Coin</span>
                 <img src={dolarImage} alt="Dolar" />
               </a>

@@ -1,11 +1,12 @@
 import React, { use, useState } from "react";
 
 import Card from "./Card";
+import SelectedPlayer from "./SelectedPlayer";
 
-const AvlablePlayer = ({ PlayerPromis }) => {
+const AvlablePlayer = ({ PlayerPromis, setCoin, coin }) => {
   const playerData = use(PlayerPromis);
 
-  const [selected, setselected] = useState(false);
+  const [selected, setselected] = useState("Available");
 
   return (
     <>
@@ -35,11 +36,15 @@ const AvlablePlayer = ({ PlayerPromis }) => {
             </button>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-          {playerData.map((Player) => {
-            return <Card Player={Player} />;
-          })}
-        </div>
+        {selected === "Available" ? (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+            {playerData.map((Player) => {
+              return <Card Player={Player} setCoin={setCoin} coin={coin} />;
+            })}
+          </div>
+        ) : (
+          <SelectedPlayer />
+        )}
       </div>
     </>
   );

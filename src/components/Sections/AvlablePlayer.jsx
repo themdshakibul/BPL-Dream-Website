@@ -11,8 +11,8 @@ const AvlablePlayer = ({ PlayerPromis, setCoin, coin }) => {
 
   return (
     <>
-      <div className="container mx-auto ">
-        <div className="flex items-center justify-between pt-20">
+      <div className="container mx-auto px-2">
+        <div className="sm:flex items-center justify-between space-y-4 pt-20">
           {selected === "Available" ? (
             <h2 className="text-3xl font-bold">Available Players</h2>
           ) : (

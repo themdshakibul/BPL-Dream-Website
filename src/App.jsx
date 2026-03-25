@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <div>
-        <Navbar coin={coin} />
+        <Navbar coin={coin} setCoin={setCoin} />
         <Suspense
           fallback={
             <div className="flex items-center justify-center h-150 text-center">

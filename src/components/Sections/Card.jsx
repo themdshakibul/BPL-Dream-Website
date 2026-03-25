@@ -5,14 +5,14 @@ import { ToastContainer, toast } from "react-toastify";
 
 const Card = ({ Player, setCoin, coin, selectedPlayer, setSelectedPlayer }) => {
   const [isSelected, setIsSelected] = useState(false);
-  
+
   const handelChoosePlayer = () => {
     let newCoion = coin - Player.price;
 
     if (newCoion >= 0) {
       setCoin(coin - Player.price);
     } else {
-      toast.warning("Nto enough coion to purches this Player!");
+      toast.error("Not enough coion to purches this Player!");
       return;
     }
     toast.success(`${Player.playerName} Is selected`);

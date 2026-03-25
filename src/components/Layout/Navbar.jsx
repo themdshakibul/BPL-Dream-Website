@@ -2,7 +2,28 @@ import navLogo from "../../assets/logo.png";
 import dolarImage from "../../assets/dollar.png";
 import bannerImage from "../../assets/banner-main.png";
 
-const Navbar = ({ coin }) => {
+import { ToastContainer } from "react-toastify/unstyled";
+import confetti from "canvas-confetti";
+import { toast } from "react-toastify";
+import { useState } from "react";
+
+const Navbar = ({ coin, setCoin }) => {
+  const [claimed, setClaimed] = useState(false);
+
+  const handelclickFreeCreadit = () => {
+    if (claimed) {
+      toast.error("You have already claimed free credit!");
+      return;
+    }
+
+    setCoin(coin + 10000);
+    setClaimed(true);
+
+    toast.success("🎉 Free Credit Added!");
+
+    confetti({ particleCount: 200, spread: 90, origin: { x: 0 } });
+    confetti({ particleCount: 200, spread: 90, origin: { x: 1 } });
+  };
   return (
     <>
       <div>
@@ -84,13 +105,18 @@ const Navbar = ({ coin }) => {
               </h2>
               <p>Beyond Boundaries Beyond Limits</p>
 
-              <button class="bg-linear-to-b from-lime-300 to-lime-400 text-neutral-900 font-semibold tracking-tight text-lg py-3 px-8 rounded-2xl border-4 border-neutral-900 outline-2 outline-lime-300 shadow-inner transition-transform active:scale-95">
+              <button
+                onClick={handelclickFreeCreadit}
+                class="bg-linear-to-b from-lime-300 to-lime-400 text-neutral-900 font-semibold tracking-tight text-lg py-3 px-8 rounded-2xl border-4 border-neutral-900 outline-2 outline-lime-300 shadow-inner transition-transform active:scale-95"
+              >
                 Claim Free Credit
               </button>
             </div>
           </div>
         </div>
       </div>
+      {/* ✅ Toast Container */}
+      <ToastContainer position="top-center" autoClose={2000} />
     </>
   );
 };

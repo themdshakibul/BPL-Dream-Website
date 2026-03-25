@@ -7,6 +7,7 @@ const AvlablePlayer = ({ PlayerPromis, setCoin, coin }) => {
   const playerData = use(PlayerPromis);
 
   const [selected, setselected] = useState("Available");
+  const [selectedPlayer, setSelectedPlayer] = useState([]);
 
   return (
     <>
@@ -15,7 +16,9 @@ const AvlablePlayer = ({ PlayerPromis, setCoin, coin }) => {
           {selected === "Available" ? (
             <h2 className="text-3xl font-bold">Available Players</h2>
           ) : (
-            <h2 className="text-3xl font-bold">Selected Player (4/6)</h2>
+            <h2 className="text-3xl font-bold">
+              Selected Player ({selectedPlayer.length}/{playerData.length})
+            </h2>
           )}
           <div>
             <button
@@ -32,18 +35,32 @@ const AvlablePlayer = ({ PlayerPromis, setCoin, coin }) => {
               }}
               className={`btn btn-xl ${selected === "Selected" ? "bg-[#e2f828]" : ""} rounded-l-none rounded-r-xl`}
             >
-              Selected (0)
+              Selected ({selectedPlayer.length})
             </button>
           </div>
         </div>
         {selected === "Available" ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
             {playerData.map((Player) => {
-              return <Card Player={Player} setCoin={setCoin} coin={coin} />;
+              return (
+                <Card
+                  key={Player.playerName}
+                  Player={Player}
+                  setCoin={setCoin}
+                  coin={coin}
+                  selectedPlayer={selectedPlayer}
+                  setSelectedPlayer={setSelectedPlayer}
+                />
+              );
             })}
           </div>
         ) : (
-          <SelectedPlayer />
+          <SelectedPlayer
+            selectedPlayer={selectedPlayer}
+            setSelectedPlayer={setSelectedPlayer}
+            setCoin={setCoin}
+            coin={coin}
+          />
         )}
       </div>
     </>

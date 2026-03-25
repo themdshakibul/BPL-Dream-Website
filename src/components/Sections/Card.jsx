@@ -3,8 +3,9 @@ import flagImage from "../../assets/Flag.png";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
-const Card = ({ Player, setCoin, coin }) => {
+const Card = ({ Player, setCoin, coin, selectedPlayer, setSelectedPlayer }) => {
   const [isSelected, setIsSelected] = useState(false);
+  
   const handelChoosePlayer = () => {
     let newCoion = coin - Player.price;
 
@@ -14,8 +15,9 @@ const Card = ({ Player, setCoin, coin }) => {
       toast.warning("Nto enough coion to purches this Player!");
       return;
     }
-    toast.success("${Player.playerName} Is selected");
+    toast.success(`${Player.playerName} Is selected`);
     setIsSelected(true);
+    setSelectedPlayer([...selectedPlayer, Player]);
   };
 
   return (
@@ -64,7 +66,6 @@ const Card = ({ Player, setCoin, coin }) => {
             </div>
           </div>
         </div>
-        <ToastContainer />
       </div>
     </>
   );

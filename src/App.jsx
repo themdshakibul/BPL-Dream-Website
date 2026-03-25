@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./components/Layout/Footer";
 import Navbar from "./components/Layout/Navbar";
 import AvlablePlayer from "./components/Sections/AvlablePlayer";
+import { ToastContainer } from "react-toastify";
 
 const fetchPlayer = async () => {
   const res = await fetch("Player.json");
@@ -32,6 +33,7 @@ function App() {
         </Suspense>
 
         <Footer />
+        <ToastContainer />
       </div>
     </>
   );

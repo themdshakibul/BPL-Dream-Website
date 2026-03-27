@@ -1,16 +1,104 @@
-# React + Vite
+# 🏏 BPL Dream App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application built using **React + Vite** to explore Bangladesh Premier League (BPL) cricket players, teams, and stats in a clean and interactive UI.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://bpl-dream-app.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 📊 View BPL players with detailed information
+* 🖼️ Player images, ratings, and pricing
+* 🏏 Batting & bowling style included
+* ⚡ Fast performance with Vite
+* 🔥 Modern UI with responsive design
+* ♻️ Component-based architecture using React
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **Frontend:** React
+* **Build Tool:** Vite
+* **Styling:** CSS / Tailwind (if used)
+* **Linting:** ESLint
+
+---
+
+## 📦 Installation & Setup
+
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+https://github.com/themdshakibul/BPL-Dream-Website.git
+
+# Navigate to project folder
+cd bpl-dream-app
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
+
+```
+bpl-dream-app/
+│── public/
+│── src/
+│   ├── components/
+│   ├── data/
+│   ├── App.jsx
+│   ├── main.jsx
+│── package.json
+│── vite.config.js
+```
+
+---
+
+## ⚙️ Available Scripts
+
+* `npm run dev` → Start development server
+* `npm run build` → Build for production
+* `npm run preview` → Preview production build
+
+---
+
+## 🔌 Vite Plugins
+
+This project uses:
+
+* `@vitejs/plugin-react` (with Oxc)
+* Alternative: `@vitejs/plugin-react-swc` (optional)
+
+---
+
+## 🧠 Future Improvements
+
+* 🔍 Search & filter players
+* ❤️ Add to favorite team feature
+* 📈 Advanced player statistics
+* 🌐 Backend integration
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 🙌 Author
+
+**Md Shakibul Islam**
+Frontend Developer | MERN Stack Learner
+
+---
+
+⭐ If you like this project, don’t forget to give it a star!
